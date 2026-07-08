@@ -1,0 +1,539 @@
+Threat Surface Report
+URL: https://www.bilecik.bel.tr/
+Domain: www.bilecik.bel.tr
+Timestamp: 2026-06-22T17:46:29.839179Z
+
+WHOIS:
+Invalid input
+
+DNS:
+A: 178.18.193.141
+AAAA: 
+MX: 
+TXT: 
+NS: 
+SOA: 
+
+HTTP Headers:
+Date: Mon, 22 Jun 2026 17:46:28 GMT
+Server: Apache
+X-Powered-By: PHP/8.4.21
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=36a5edc9b227cc9d54bc326609627681; path=/
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+Security Headers:
+missing: content-security-policy, strict-transport-security, x-frame-options, x-content-type-options, referrer-policy, permissions-policy
+
+CORS:
+access_control_allow_origin: 
+access_control_allow_credentials: 
+access_control_allow_methods: 
+access_control_allow_headers: 
+
+Tech Fingerprint:
+server: Apache
+x_powered_by: PHP/8.4.21
+via: 
+
+CVE Hints:
+CVE-2021-41773: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41773 (hint only; verify version impact)
+
+TLS:
+subject: ((('commonName', '*.bilecik.bel.tr'),),)
+issuer: ((('countryName', 'US'),), (('organizationName', 'DigiCert Inc'),), (('organizationalUnitName', 'www.digicert.com'),), (('commonName', 'GeoTrust TLS RSA CA G1'),))
+not_before: May 29 00:00:00 2026 GMT
+not_after: Dec 13 23:59:59 2026 GMT
+serial_number: 072619A195B7890A8C196E667C9322AB
+cipher: ('TLS_AES_256_GCM_SHA384', 'TLSv1.3', 256)
+days_until_expiry: 174
+
+robots.txt:
+
+
+sitemap.xml:
+
+
+Subdomains (CT log):
+
+Third-party Domains:
+atolyeler.bilecik.bel.tr
+beyan.bilecik.bel.tr
+bigencuniversiteli.bilecik.bel.tr
+bilecik.bel.tr
+cdn.jsdelivr.net
+code.jquery.com
+e-belediye.bilecik.bel.tr
+e-imar.bilecik.bel.tr
+fonts.googleapis.com
+fonts.gstatic.com
+mebis.bilecik.bel.tr
+twitter.com
+wa.me
+www.facebook.com
+www.googletagmanager.com
+www.instagram.com
+x.com
+
+Discovered Endpoints:
+/#([^\s
+/%20/g,Mt=/#.*$/,It=/([?&]
+/(=
+/(?:mp3|oga|ogg|opus
+/(?:mpeg|mp4|ogg|webm
+/([\0-\x1f\x7f]|^-?\d
+/*!
+/**
+/,$t=/^\/\//,Bt={},_t={},Xt=
+/,H=/[+~]/,O=new
+/,Nt=function(e
+/,Wt=/^(.*?
+/,j={children:!0,contents:!0,next:!0,prev:!0};function
+/,pt=/queueHooks$/;function
+/,tt={position:
+/,y=/\..*/,w=/::\d+$/,A={};let
+/,z=/[A-Z]/g;function
+/.source,Y=new
+/.test(Et.protocol
+/1336
+/1337
+/1338
+/1339
+/1340
+/1341
+/2-G-re-te-R.mainAxis:K-re-te-R.mainAxis,ie=O?-B[_]/2+G+re+ne+R.mainAxis:Q+re+ne+R.mainAxis,ae=t.elements.arrow&&E(t.elements.arrow
+/2-M-q-z-O.mainAxis:F-q-z-O.mainAxis,K=v?-E[I]/2+M+q+R+O.mainAxis:H+q+R+O.mainAxis,Q=e.elements.arrow&&se(e.elements.arrow
+/2-m/2,v=h[u],y=_-d[c]-h[f],w=_/2-d[c]/2+b,A=re(v,w,y
+/2-m/2,x=p[l],w=y-u[c]-p[d],O=y/2-u[c]/2+b,j=de(x,O,w
+/2-n.width/2,l=i.y+i.height/2-n.height/2;switch(o
+/2-n[h]/2
+/2-r.width/2,f=n.y+n.height/2-r.height/2;switch(i
+/2-r[p]/2
+/2:0,F=b===yt?E[I]:T[I],H=b===yt?-T[I]:-E[I],$=e.elements.arrow,W=f&&$?Gt($
+/2:0,K=w===W?B[_]:H[_],Q=w===W?-H[_]:-B[_],Z=t.elements.arrow,$=m&&Z?g(Z
+/2},_default:
+/3
+/:?]*(?:[#/?]|$
+/;(ce.fn.init=function(e,t,n
+/;ce.Deferred.exceptionHook=function(e,t
+/;ce.ajaxSetup({jsonp:
+/;function
+/<script|<style|<link/i,Pe=/checked\s*(?:[^=]|=\s*.checked.
+/<|&#?\w+;/;function
+/=2,l=l||c[3],c=+u||1;while(a--
+/=o;c*=2,ce.style(e,t,c+l
+/>
+/>
+                </a>        
+                <button class=
+/></a>
+/></a>                </div>                <div class=
+/><br
+/>çalışkan
+/?>(?:<\/\1>|
+/Css/main.css
+/Domaniç
+/DuyurularAjax
+/HTML$/i,ce=function(e,t
+/HaberArsivAjax
+/Images//isimiz_gucumuz.png
+/Images//melek_mizrak_subasi.png
+/Images//melek_mizrak_subasi_yatay.png
+/Images/atam.png
+/Images/favicon.png
+/Images/logo.png
+/Js/main.js
+/MeclisDetayAjax
+/SXH301p5ILy+dN9+nJOZ
+/Trident/i.test(Xt(
+/Trident/i.test(f(
+/VefatEdenlerAjax
+/[+-]?(?:\d*\.|
+/[A-Z]/g,(t=>`-${t.toLowerCase(
+/[^.]*(?=\..*
+/[^\x20\t\r\n\f]+/g;function
+/\?/;ce.parseXML=function(e
+/\D/g,
+/\[\]$/,Lt=/\r?\n/g,Ht=/^(?:submit|button|image|reset|file
+/\b(?:java|ecma
+/\bxml\b/,html:/\bhtml/,json:/\bjson\b/},responseFields:{xml:
+/\r/g;ce.fn.extend({val:function(n
+/\s([a-z]+
+/\w+/g
+/^((?!chrome|android
+/^(?:(?:https?|mailto|ftp|tel|file|sms
+/^(?:\s*(<[\w\W]+>
+/^(?:\{[\w\W]*\}|\[[\w\W]*\]
+/^(?:about|app|app-storage|.+-extension|file|res|widget
+/^(?:checkbox|radio
+/^(?:focusinfocus|focusoutblur
+/^(?:input|select|textarea|button
+/^(?:parents|prev(?:Until|All
+/^(?:toggle|show|hide
+/^(Eval|Internal|Range|Reference|Syntax|Type|URI
+/^([^.]*
+/^(none|table(?!-c[ea]
+/^--/,Ue=function(e
+/^-ms-/,I=/-([a-z]
+/^<([a-z][^\/\0>:\x20\t\r\n\f]*
+/^[\s\uFEFF\xA0]+|([^\s\uFEFF\xA0]
+/^aria-[\w-]*$/i],a:[
+/^bs/,
+/a-z]+=*$/i,Ki=(t,e
+/a>
+/a></a>
+/a></li>
+/a><select
+/auto|scroll|overlay|hidden/.test(i+s+n
+/auto|scroll|overlay|hidden/.test(n+o+r
+/b>
+/b><br
+/b><small
+/body>
+/button>
+/colgroup></table>
+/core
+/css
+/div>
+/div></div>
+/div></div><div
+/div><div
+/div><h3
+/e.offsetHeight||1
+/e.offsetHeight||1;return
+/e.offsetWidth||1,p=e.offsetHeight>0&&s(a.height
+/e.offsetWidth||1,r=s(t.height
+/ecmascript,
+/f,h=(a.top+(l&&u?u.offsetTop:0
+/firefox/i.test(Xt(
+/firefox/i.test(f(
+/form><form></form>
+/g,((t,e
+/g;ce.proxy=function(e,t
+/g;function
+/g=
+/gm,Ft=/^(?:GET|HEAD
+/h3><div
+/h5>
+/h5><span
+/head>
+/html
+/html>
+/h}}},PSEUDO:function(e,o
+/i
+/i,Ce=/^$|^module$|\/(?:java|ecma
+/i,Ot=/^(?:input|select|textarea|keygen
+/i,Re=/^\s*<!\[CDATA\[|\]\]>\s*$/g;function
+/i,Te=/<([a-z][^\/\0>\x20\t\r\n\f]*
+/i,Vi=/^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp
+/i,q=/^h\d$/i,L=/^(?:#([\w-]+
+/i,wt=/^(?:a|area
+/i.test(Xt(
+/i.test(f(
+/i;function
+/i;xe=C.createDocumentFragment(
+/i>
+/i>&nbsp;&nbsp;Atölye
+/i>&nbsp;&nbsp;Banka
+/i>&nbsp;&nbsp;Bi
+/i>&nbsp;&nbsp;Bilgi
+/i>&nbsp;&nbsp;Coğrafi
+/i>&nbsp;&nbsp;Duyurular
+/i>&nbsp;&nbsp;Eğitim
+/i>&nbsp;&nbsp;Fiziki
+/i>&nbsp;&nbsp;Haber
+/i>&nbsp;&nbsp;Halk
+/i>&nbsp;&nbsp;K.V.K.K.
+/i>&nbsp;&nbsp;Kültür
+/i>&nbsp;&nbsp;Mezarlık
+/i>&nbsp;&nbsp;Vefat
+/i></a>
+/i></button></a>
+/i></div>
+/i><br
+/input|select|option|textarea|form/i.test(t.target.tagName
+/input|textarea/i.test(t.target.tagName
+/javascript
+/javascript,
+/json,
+/l.duration||0
+/left|right|bottom|top/g,(function(e
+/left|right|bottom|top/g,(function(t
+/li>
+/li></a>
+/license
+/nav><div
+/o,h=n.width/s,d=n.height/o;return{width:h,height:d,top:c,right:l+h,bottom:c+d,left:l,x:l,y:c}}function
+/option>
+/option></select>
+/o||0,y:s(r*o
+/o||0}}({x:y,y:b},t(r
+/p,m=a.width/f,v=a.height/p;return{width:m,height:v,top:h,right:d+m,bottom:h+v,left:d,x:d,y:h}}function
+/p>
+/plain
+/s,c=(n.top+(a&&r?r.offsetTop:0
+/script>
+/select>
+/show|hide/.test(t
+/small></div>
+/span>
+/span></div>
+/start|end/g,(function(e
+/start|end/g,(function(t
+/strong></a>
+/s||0,y:Qt(n*s
+/s||0}}({x:f,y:m},$t(i
+/t.offsetHeight||1
+/t.offsetHeight||1;return
+/t.offsetWidth||1,n=Qt(e.height
+/t.offsetWidth||1,o=t.offsetHeight>0&&Qt(n.height
+/table>
+/tbody></table>
+/textarea>
+/this._deltaX;this._deltaX=0,e&&g(e>0?this._config.rightCallback:this._config.leftCallback
+/title>
+/tr></tbody></table>
+/ul>
+/u||.5
+/x-ecmascript
+/x-icon
+/x-www-form-urlencoded
+/x-www-form-urlencoded;
+/xml
+/xml,
+/},converters:{
+
+Wayback URLs:
+http://www.bilecik.bel.tr:80/
+http://www.bilecik.bel.tr/!a.1w
+http://www.bilecik.bel.tr/!a.3c
+https://www.bilecik.bel.tr/%22
+http://www.bilecik.bel.tr/%20organization/143/organizasyon-semasi.aspx
+http://www.bilecik.bel.tr/%E2%80%8E
+http://www.bilecik.bel.tr/(
+http://www.bilecik.bel.tr//*
+http://www.bilecik.bel.tr:80/+fadeimages[0]+
+http://www.bilecik.bel.tr/,4h:E.V.1h
+http://www.bilecik.bel.tr/.dcr
+http://www.bilecik.bel.tr/.js
+http://www.bilecik.bel.tr/.swf
+http://www.bilecik.bel.tr/.TEST
+https://www.bilecik.bel.tr/.well-known/ai-plugin.json
+https://www.bilecik.bel.tr/.well-known/assetlinks.json
+https://www.bilecik.bel.tr/.well-known/dnt-policy.txt
+https://www.bilecik.bel.tr/.well-known/gpc.json
+https://www.bilecik.bel.tr/.well-known/nodeinfo
+https://www.bilecik.bel.tr/.well-known/openid-configuration
+http://www.bilecik.bel.tr/.well-known/security.txt
+https://www.bilecik.bel.tr/.well-known/trust.txt
+http://www.bilecik.bel.tr/.word
+http://www.bilecik.bel.tr/0.jpg
+http://www.bilecik.bel.tr/1.2.1
+http://www.bilecik.bel.tr/1.6.0.3
+http://www.bilecik.bel.tr/1.9.0
+http://www.bilecik.bel.tr/2009.pdf
+http://www.bilecik.bel.tr/26.html
+http://www.bilecik.bel.tr:80/404.aspx?
+http://www.bilecik.bel.tr:80/404.aspx?aspxerrorpath=/barinagimiz/.aspx
+http://bilecik.bel.tr:80/404.aspx?aspxerrorpath=/Date(-62135596800000)/.aspx
+http://bilecik.bel.tr:80/404.aspx?aspxerrorpath=/Date(253402293599999)/.aspx
+http://www.bilecik.bel.tr/404.aspx?aspxerrorpath=/Normal.aspx
+http://www.bilecik.bel.tr:80/404.aspx?aspxerrorpath=/ScriptResource.axd
+http://bilecik.bel.tr/404.aspx?aspxerrorpath=/WebResource.axd
+http://www.bilecik.bel.tr:80/404.aspx?aspxerrorpath=/yeni.aspx
+http://www.bilecik.bel.tr:80/404.aspx?aspxerrorpath=/yeni/.aspx
+https://www.bilecik.bel.tr/5.15
+http://www.bilecik.bel.tr/5.15Osmanl%C4%B1
+http://www.bilecik.bel.tr:80/500.aspx?
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/Activity.aspx
+http://bilecik.bel.tr:80/500.aspx?aspxerrorpath=/Content.aspx
+http://bilecik.bel.tr:80/500.aspx?aspxerrorpath=/Department.aspx
+http://www.bilecik.bel.tr/500.aspx?aspxerrorpath=/PersonDetail.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/PersonList.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/PhotoGalleryDetail.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/Poll.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/PollResult.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/Section.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/SectionSpacialNoImage.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/VideoGallery.aspx
+http://www.bilecik.bel.tr:80/500.aspx?aspxerrorpath=/VideoGalleryDetail.aspx
+https://www.bilecik.bel.tr/730Gun1Sehir
+http://www.bilecik.bel.tr/74/x-73-2Y-72
+http://www.bilecik.bel.tr/9P.9O
+http://www.bilecik.bel.tr/;6.R.19=
+http://www.bilecik.bel.tr/;s.1V=
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=akmasa@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=ambar@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=basin@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=baskan@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=bilecik@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=bilgiedinme@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=bim@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=fen@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=gelir@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=hesap@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=hukuk@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=imar@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=kadrisenturk@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=kasimuyar@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=kbs@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=osmangezgin@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=ozelkalem@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=personel@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=sss@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=tahakkuk@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=tahsilat@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=temizlik@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=veterinerlik@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=yazi@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?sayfa=iletisim&birim=zabita@bilecik.bel.tr
+http://www.bilecik.bel.tr:80/?isRedirectMobileSite=1
+http://www.bilecik.bel.tr/a.12
+http://www.bilecik.bel.tr/a.1w
+http://www.bilecik.bel.tr/a.2Q
+http://www.bilecik.bel.tr/a.3c
+http://www.bilecik.bel.tr/a9bc224bd710f56d27affffddc764239b58c3faa0/shield.png
+http://www.bilecik.bel.tr/AC_RunActiveContent.js
+http://www.bilecik.bel.tr:80/Admin/Login.aspx
+http://www.bilecik.bel.tr/ads%C3%BDz.JPG
+https://www.bilecik.bel.tr/ads.txt
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=56&_=1527680724022
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1527680724041
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1527680724058
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1555333179217
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1555333179224
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1555333179232
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetContentAlbum&GalleryID=257&PageIndex=1&PageSize=5&PagePeriod=10&HeaderLength=75&SpotLength=76&_=1563059988129
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetContentAlbum&GalleryID=257&PageIndex=1&PageSize=5&PagePeriod=10&HeaderLength=75&SpotLength=76&_=1563059989439
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetContentAlbum&GalleryID=257&PageIndex=1&PageSize=5&PagePeriod=10&HeaderLength=75&SpotLength=76&_=1563059990298
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1579770905220
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1579770905224
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1579770905227
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1579770907916
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1579770907920
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1579770907924
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1579770919375
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1579770919377
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1584619224035
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584619224038
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1584758171728
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758172050
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758172083
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1584758172332
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758172348
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758172368
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1584758173474
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758173499
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758173513
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1584758177715
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758177753
+http://www.bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1584758177773
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalender&CurrentDateTime=&CategoryID=18&_=1588432210231
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1588432210235
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30&_=1588432210239
+http://bilecik.bel.tr/AjaxRequest.ashx?Method=GetActivityCalenderEvents&CurrentDateTime=&LoadMode=M&PageIndex=0&PageSize=100&HeaderLength=50&SpotLength=60&CategoryID=30
+http://www.bilecik.bel.tr:80/AjaxResize.ashx?
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/2017_osmanl_padiahlar_tarih_eridi/DSC_0820_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/2018_ELEKTRO/kat_atk_donuum_tesis_1_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/_19_MAYIS_ATATURKU_ANMA_GENCLK_VE_SPOR_BAYRAMI_MESAJI/DSC_6376.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/_40._YILINI_KUTLUYORUZ/SULTANEL_YORESEL_LEZZETLER_EV.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/ack_hava_tiyatrosuu/DSC_0986_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/barnak_2016/41b7cfaa-DSC_7017JPG_350.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/Bilecik_Belediyesi_Kapal_Pazar_/IMG_1124_350.jpg&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/Bilecik_Belediyesi_Su_Elence_Dunyas/DSC_1072_350.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/cocuk_sinemas.jpg&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/cocuk_sinemas_yeni/DSC_4707_350.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/dddddddddd.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/DDER/DKY2_960.jpg&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/de.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/DSC_1000_960.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/DSC_4589.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/DSC_8887.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/DSC_9013.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/KATLI_OTOPARK/Bilecik_Belediyesi_Katl_Otopark_2_960.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/Mn_Golf/spottfff.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/ODULLER_SAHPLERN_BULDU_1.jpg&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/otogar.jpg&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_BARINAK/DSC_3239_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_BNA/DSC_4598_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_CAM/DSC_6969_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_DK/DSC_6022_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_HAMAM/DSC_6009_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_KATLI/DSC_5842_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_SULTAN/DSC_5813_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_TESS/DSC_7761_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/PROJE_YOL/DSC_5838_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/ptrck/2_960.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/Resim_036.jpg&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/spotteee.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/su11/DSC_0106_960.JPG&width=220&height=261
+http://www.bilecik.bel.tr/AjaxResize.ashx?al=1&file=Files/sultan_eli/1_960.JPG&width=220&height=261
+http://bilecik.bel.tr/AjaxResize.ashx?file=
+http://www.bilecik.bel.tr/AjaxResize.ashx?file=&width=218&height=126
+http://bilecik.bel.tr/AjaxResize.ashx?file=&width=635&height=200
+http://bilecik.bel.tr/AjaxResize.ashx?file=&width=200
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/04.02.2015//Bilecik_Sakarya_Gazetesi-03_350_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/04.02.2015//Bilecik_Sakarya_Gazetesi-04_165_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/04.02.2015//Yenigun_Eskisehir-04_960_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/04.02.2015//YurtHaber-02_960_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//Bilecik_Sakarya_Gazetesi-04_165.jpg&width=218&height=126
+http://www.bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//Bilecik_Sakarya_Gazetesi-04_165.jpg&width=128&height=85
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//Bilecik_Sakarya_Gazetesi-04_960.jpg&width=672
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//Eskisehir_Sakarya_Gazetesi-04_960.jpg&width=672
+http://www.bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//sehir_Eskisehir-04_165.jpg&width=128&height=85
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//sehir_Eskisehir-04_960.jpg&width=672
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//Yeni_Bozuyuk-04_165.jpg&width=128&height=85
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//Yeni_Bozuyuk-04_960.jpg&width=672
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/04.12.2014//YurtHaber-04_960.jpg&width=672
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/11._ULUSLARARASI_BLECK_TYATRO_FESTVAL_HAZIRLIKLARI_TUM_HIZIYLA_DEVAM_EDYOR//14457365_786926271450334_337344748430956033_n_960.jpg&width=185
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/16.02.2015//iki_Eylul-16_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/16.02.2015//Yenigun_Eskisehir-16_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/16.02.2015//YurtHaber-16_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/2._NONU_ZAFER_MESAJI/12524376_701528833323412_3762830061253144048_n_350.jpg&width=116
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/2._NONU_ZAFER_MESAJI/12524376_701528833323412_3762830061253144048_n_350.jpg&width=134
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2.muzik_kursu//1234_2_960.JPG
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2.muzik_kursu//1234_3_960.JPG
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2.muzik_kursu//1234_4_960.JPG
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2.muzik_kursu//DSC_4951_960.JPG
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2.muzik_kursu//DSC_4952_960.JPG
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2015_MART_GAZETE_MANETLER//Bilecik_Sakarya_Gazetesi-06_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2015_MART_GAZETE_MANETLER//Eskisehir_Anadolu-06_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2015_MART_GAZETE_MANETLER//sehir_Eskisehir-06_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?width=672&file=/Files/2015_MART_GAZETE_MANETLER//Yenigun_Eskisehir-06_960.jpg
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/2017_osmanl_padiahlar_tarih_eridi//DSC_0798_960.JPG&width=185
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/2017_osmanl_padiahlar_tarih_eridi//DSC_0805_960.JPG&width=185
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/2017_osmanl_padiahlar_tarih_eridi//DSC_0807_960.JPG&width=185
+http://bilecik.bel.tr/AjaxResize.ashx?file=/Files/2017_osmanl_padiahlar_tarih_eridi//DSC_0809_960.JPG&width=185
+
+External Tools:
+gau: ok=False error=gau not found on PATH raw=runs/20260622_174629/www_bilecik_bel_tr_gau.txt
+theHarvester: ok=False error=theHarvester not found on PATH raw=runs/20260622_174629/www_bilecik_bel_tr_theharvester.txt
+whatweb: ok=False error=whatweb not found on PATH raw=runs/20260622_174629/www_bilecik_bel_tr_whatweb.txt
+
+Active Scan:
+ports: [80, 443, 8080]
+open: [80, 443]
+service: 80/tcp http Apache httpd None None
+service: 443/tcp http Apache httpd None None
+
+Risk Summary:
+- security_headers_missing: ['content-security-policy', 'strict-transport-security', 'x-frame-options', 'x-content-type-options', 'referrer-policy', 'permissions-policy'] (sev: low)
+- open_ports: [80, 443] (sev: info)
+severity counts: {'low': 1, 'medium': 0, 'high': 0, 'info': 1}
+
+Summary Stats:
+subdomains: 0
+third_party: 17
+endpoints: 224
+wayback_urls: 200
+open_ports: 2
+gau_urls: 0
+
+Notes:
+robots error: HTTP Error 404: Not Found
+sitemap error: HTTP Error 404: Not Found
+ct log error: The read operation timed out
