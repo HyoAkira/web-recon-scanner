@@ -21,7 +21,7 @@ X-Powered-By: PHP/8.4.21
 Expires: Thu, 19 Nov 1981 08:52:00 GMT
 Cache-Control: no-store, no-cache, must-revalidate
 Pragma: no-cache
-Set-Cookie: PHPSESSID=36a5edc9b227cc9d54bc326609627681; path=/
+Set-Cookie: [REDACTED]
 Connection: close
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=UTF-8
