@@ -1,0 +1,4 @@
+# The core scanner (main.py) is standard library only - it needs nothing from here.
+# These dependencies are for the optional Streamlit dashboard (dashboard.py).
+
+streamlit>=1.28
