@@ -1,0 +1,9 @@
+# Scan output directories (per-run raw tool output + reports)
+runs/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Environment / secrets
+.env
