@@ -4,34 +4,34 @@ import json
 import os
 import shlex
 
-# Sayfa yapılandırması
-st.set_page_config(page_title="Tehdit Yüzeyi Tarama Aracı", page_icon="🔍", layout="wide")
+# Page configuration
+st.set_page_config(page_title="Threat Surface Scanner", page_icon="🔍", layout="wide")
 
-# Beyaz pastel tema CSS'i
+# Light pastel theme CSS
 st.markdown("""
 <style>
-    /* Ana arkaplan */
+    /* Main background */
     .stApp {
         background-color: #fcfcfc;
     }
     
-    /* Yan panel */
+    /* Sidebar */
     [data-testid="stSidebar"] {
         background-color: #f5f6f8;
         border-right: 1px solid #e0e4e8;
     }
 
-    /* Başlıklar */
+    /* Headings */
     h1, h2, h3, h4, h5, h6 {
         color: #4a5568 !important;
     }
     
-    /* Metin rengi */
+    /* Text colour */
     .stMarkdown, .stText, p {
         color: #4a5568 !important;
     }
 
-    /* Input alanları */
+    /* Input fields */
     .stTextInput > div > div > input,
     .stNumberInput > div > div > input {
         background-color: #ffffff;
@@ -40,7 +40,7 @@ st.markdown("""
         color: #4a5568;
     }
 
-    /* Metric kartları, Tablar ve Expander'lar */
+    /* Metric cards, tabs and expanders */
     [data-testid="stMetric"], [data-testid="stExpander"], .stTabs {
         background-color: #ffffff;
         border: 1px solid #e2e8f0;
@@ -61,42 +61,42 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.title("🔍 Arama Motoru Stili Tehdit Yüzeyi Tarama")
-st.markdown("Hedef alan adını veya IP adresini girin, tarama seçeneklerini belirleyin ve sonuçları inceleyin.")
+st.title("🔍 Search-Engine-Style Threat Surface Scan")
+st.markdown("Enter a target domain or IP address, choose the scan options, then review the results.")
 
-# Arama motoru tarzı ana giriş
+# Search-engine style main input
 col_search, col_btn = st.columns([4, 1])
 with col_search:
-    target_url = st.text_input("Hedef IP veya Site URL'si", placeholder="Örn: example.com", label_visibility="collapsed")
+    target_url = st.text_input("Target IP or site URL", placeholder="e.g. example.com", label_visibility="collapsed")
 with col_btn:
-    run_button = st.button("Taramayı Başlat 🚀", use_container_width=True)
+    run_button = st.button("Start Scan 🚀", use_container_width=True)
 
-# Yan panel: Ayarlar ve Argümanlar
+# Sidebar: settings and arguments
 with st.sidebar:
-    st.header("⚙️ Tarama Ayarları")
+    st.header("⚙️ Scan Settings")
     
-    st.subheader("Çıktı Argümanları")
-    report_file = st.text_input("Rapor Dosyası (--report)", value="report.txt")
-    json_file = st.text_input("JSON Dosyası (--json)", value="report.json")
+    st.subheader("Output Arguments")
+    report_file = st.text_input("Report file (--report)", value="report.txt")
+    json_file = st.text_input("JSON file (--json)", value="report.json")
     
-    st.subheader("Aktif Tarama Ayarları")
-    active_scan = st.checkbox("Aktif Tarama (--active)", value=True)
-    ports = st.text_input("Portlar (--ports)", value="80,443,8080")
-    full_ports = st.checkbox("Tüm Portları Tara (--full-ports)", value=False)
-    no_nmap = st.checkbox("Nmap Kullanma (--no-nmap)", value=False)
+    st.subheader("Active Scan Settings")
+    active_scan = st.checkbox("Active scan (--active)", value=True)
+    ports = st.text_input("Ports (--ports)", value="80,443,8080")
+    full_ports = st.checkbox("Scan all ports (--full-ports)", value=False)
+    no_nmap = st.checkbox("Disable nmap (--no-nmap)", value=False)
     
-    st.subheader("JavaScript ve Dosya Tarama")
-    js_any_domain = st.checkbox("JS İçin Herhangi Bir Domaine İzin Ver (--js-any-domain)", value=True)
-    max_js = st.number_input("Maksimum JS Dosyası (--max-js)", min_value=1, value=5)
-    max_wayback = st.number_input("Maksimum Wayback URL (--max-wayback)", min_value=10, value=200)
+    st.subheader("JavaScript and File Scanning")
+    js_any_domain = st.checkbox("Allow JS from any domain (--js-any-domain)", value=True)
+    max_js = st.number_input("Max JS files (--max-js)", min_value=1, value=5)
+    max_wayback = st.number_input("Max Wayback URLs (--max-wayback)", min_value=10, value=200)
 
 if run_button:
     if not target_url:
-        st.warning("Lütfen bir hedef URL veya IP girin!")
+        st.warning("Please enter a target URL or IP.")
     else:
-        st.info(f"{target_url} hedeflenerek tarama başlatılıyor. Bu işlem biraz zaman alabilir...")
+        st.info(f"Starting scan against {target_url}. This may take a while...")
         
-        # Argümanları oluşturma
+        # Build the argument list
         cmd = ["python", "main.py", target_url]
         
         if report_file:
@@ -119,115 +119,115 @@ if run_button:
         cmd.extend(["--max-js", str(max_js)])
         cmd.extend(["--max-wayback", str(max_wayback)])
 
-        # Komutu gösterme
+        # Show the command that will be run
         cmd_str = " ".join(shlex.quote(c) for c in cmd)
-        st.markdown("**Çalıştırılan Komut:**")
+        st.markdown("**Command run:**")
         st.code(cmd_str, language="bash")
         
-        # Tarama işlemi
-        with st.spinner("Tarama çalışıyor, lütfen bekleyin... (Bu işlem dakikalar sürebilir)"):
+        # Run the scan
+        with st.spinner("Scan running, please wait... (this can take a few minutes)"):
             try:
-                # Scriptin olduğu dizinde çalışması için cwd ayarlıyoruz
+                # Run from the script's own directory so relative paths resolve
                 project_dir = os.path.dirname(os.path.abspath(__file__))
                 result = subprocess.run(cmd, capture_output=True, text=True, cwd=project_dir)
                 
                 if result.returncode != 0:
-                    st.error("Çalıştırma sırasında bir hata oluştu veya komut eksik!")
-                    with st.expander("Hata Detayları"):
+                    st.error("The scan failed or a required command is missing.")
+                    with st.expander("Error details"):
                         st.code(result.stderr)
                 else:
-                    st.success("Tarama başarıyla tamamlandı!")
+                    st.success("Scan completed successfully.")
                     
                     json_path = os.path.join(project_dir, json_file)
                     
-                    # Sonuçları JSON'dan okuma
+                    # Read the results back from the JSON output
                     if os.path.exists(json_path):
                         with open(json_path, 'r', encoding='utf-8') as f:
                             data = json.load(f)
                             
-                        # JSON Verilerini Gösterme
-                        st.header("📊 Tarama Sonuçları")
+                        # Render the JSON data
+                        st.header("📊 Scan Results")
                         
-                        st.subheader("Genel İstatistikler")
+                        st.subheader("Overview")
                         col1, col2, col3, col4 = st.columns(4)
-                        col1.metric("Hedef Domain", data.get("domain", target_url))
-                        col2.metric("Açık Portlar", len(data.get("active_scan", {}).get("open", [])))
-                        col3.metric("Uç Noktalar (Endpoints)", len(data.get("endpoints", [])))
-                        col4.metric("Alt Alan Adları", len(data.get("subdomains", [])))
+                        col1.metric("Target domain", data.get("domain", target_url))
+                        col2.metric("Open ports", len(data.get("active_scan", {}).get("open", [])))
+                        col3.metric("Endpoints", len(data.get("endpoints", [])))
+                        col4.metric("Subdomains", len(data.get("subdomains", [])))
                         
                         tabs = st.tabs([
-                            "Temel Ağ", "HTTP & Güvenlik", "Zafiyetler & Riskler", 
-                            "Keşif (Endpoints vb.)", "Araçlar & Notlar", "Raw JSON"
+                            "Basic Network", "HTTP & Security", "Vulnerabilities & Risks", 
+                            "Discovery (Endpoints etc.)", "Tools & Notes", "Raw JSON"
                         ])
                         
                         with tabs[0]:
-                            st.markdown("### 🌐 DNS Kayıtları")
+                            st.markdown("### 🌐 DNS Records")
                             st.json(data.get("dns", {}))
-                            st.markdown("### 🔌 Aktif Tarama (Açık Portlar)")
+                            st.markdown("### 🔌 Active Scan (Open Ports)")
                             st.json(data.get("active_scan", {}))
                             st.markdown("### ℹ️ WHOIS")
-                            st.text(data.get("whois", {}).get("stdout", "Kayıt bulunamadı."))
+                            st.text((data.get("whois") or {}).get("stdout", "No record found."))
                             
                         with tabs[1]:
                             col_h1, col_h2 = st.columns(2)
                             with col_h1:
-                                st.markdown("### 📋 HTTP Başlıkları")
+                                st.markdown("### 📋 HTTP Headers")
                                 st.json(data.get("http_headers", {}))
                             with col_h2:
-                                st.markdown("### 🛡️ Güvenlik Başlıkları")
+                                st.markdown("### 🛡️ Security Headers")
                                 st.json(data.get("security_headers", {}))
                                 
-                            st.markdown("### 🔀 CORS Politikası")
+                            st.markdown("### 🔀 CORS Policy")
                             st.json(data.get("cors", {}))
-                            st.markdown("### 🔒 TLS/SSL Bilgisi")
+                            st.markdown("### 🔒 TLS/SSL Info")
                             st.json(data.get("tls", {}))
-                            st.markdown("### ⚙️ Teknoloji Parmak İzi")
+                            st.markdown("### ⚙️ Technology Fingerprint")
                             st.json(data.get("tech_fingerprint", {}))
                             
                         with tabs[2]:
-                            st.markdown("### ⚠️ Risk Özeti")
+                            st.markdown("### ⚠️ Risk Summary")
                             st.json(data.get("risk_summary", {}))
-                            st.markdown("### 🐛 Olası CVE Eşleşmeleri")
+                            st.markdown("### 🐛 Possible CVE Matches")
                             cves = data.get("cve_matches", [])
                             if cves:
                                 st.table(cves)
                             else:
-                                st.info("Herhangi bir CVE eşleşmesi bulunamadı.")
+                                st.info("No CVE matches found.")
                             
                         with tabs[3]:
-                            st.markdown("### 📍 Bulunan Uç Noktalar (Endpoints)")
+                            st.markdown("### 📍 Discovered Endpoints")
                             st.write(data.get("endpoints", []))
-                            st.markdown("### 🏢 Alt Alan Adları (Subdomains)")
+                            st.markdown("### 🏢 Subdomains")
                             st.write(data.get("subdomains", []))
-                            st.markdown("### 🔗 Üçüncü Taraf Alan Adları (Third Party)")
+                            st.markdown("### 🔗 Third-Party Domains")
                             st.write(data.get("third_party", []))
                             st.markdown("### 🕰️ Wayback URLs")
                             wayback = data.get("wayback_urls", [])
-                            with st.expander(f"{len(wayback)} Wayback URL Göster"):
+                            with st.expander(f"Show {len(wayback)} Wayback URLs"):
                                 st.write(wayback)
                             
                         with tabs[4]:
-                            st.markdown("### 🧰 Dış Araç Çıktıları")
+                            st.markdown("### 🧰 External Tool Output")
                             st.json(data.get("external_tools", {}))
-                            st.markdown("### 📝 Notlar")
+                            st.markdown("### 📝 Notes")
                             notes = data.get("notes", [])
                             if notes:
                                 for note in notes:
                                     st.warning(note)
                             else:
-                                st.info("Not bulunmuyor.")
+                                st.info("No notes.")
                             
                             st.markdown("### 🤖 robots.txt & sitemap.xml")
-                            with st.expander("robots.txt İçeriği"):
-                                st.text(data.get("robots") or "robots.txt bulunamadı.")
-                            with st.expander("sitemap.xml İçeriği"):
-                                st.text(data.get("sitemap") or "sitemap.xml bulunamadı.")
+                            with st.expander("robots.txt content"):
+                                st.text(data.get("robots") or "robots.txt not found.")
+                            with st.expander("sitemap.xml content"):
+                                st.text(data.get("sitemap") or "sitemap.xml not found.")
                                 
                         with tabs[5]:
-                            st.markdown("### 📄 Tam report.json İçeriği")
+                            st.markdown("### 📄 Full report.json content")
                             st.json(data)
                             
                     else:
-                        st.warning(f"Belirtilen JSON çıktı dosyası ({json_path}) bulunamadı. Lütfen scriptin başarılı çalıştığından emin olun.")
+                        st.warning(f"The JSON output file ({json_path}) was not found. Check that the scan completed successfully.")
             except Exception as e:
-                st.error(f"Bir hata oluştu: {e}")
+                st.error(f"An error occurred: {e}")
