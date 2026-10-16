@@ -1,6 +1,14 @@
 # Scan output directories (per-run raw tool output + reports)
 runs/
 
+# Scan-output filenames at the repository root (no third-party scan data is tracked)
+report.json
+report.txt
+repor1t.json
+*_gau.txt
+*_theharvester.txt
+*_whatweb.txt
+
 # Python bytecode
 __pycache__/
 *.pyc
