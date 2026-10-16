@@ -67,7 +67,7 @@ st.markdown("Enter a target domain or IP address, choose the scan options, then 
 # Search-engine style main input
 col_search, col_btn = st.columns([4, 1])
 with col_search:
-    target_url = st.text_input("Target IP or site URL", placeholder="e.g. bilecik.edu.tr", label_visibility="collapsed")
+    target_url = st.text_input("Target IP or site URL", placeholder="e.g. example.com", label_visibility="collapsed")
 with col_btn:
     run_button = st.button("Start Scan 🚀", use_container_width=True)
 
