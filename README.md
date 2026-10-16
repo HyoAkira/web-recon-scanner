@@ -101,8 +101,6 @@ Network access is gated before any request: with `--allowlist-file`, `is_allowed
 │                     # probes in sequence; argparse CLI; three renderers (text report,
 │                     # JSON, CSV append)
 ├── dashboard.py      # Streamlit UI; shells out to main.py via subprocess.run
-├── report.json       # Redacted sample output (JSON) from a real run
-├── report.txt        # Redacted sample output (text) from the same run
 ├── requirements.txt  # streamlit, for the dashboard only
 ├── LICENSE           # MIT
 └── .gitignore
@@ -202,27 +200,21 @@ The tool is built to make the safe path the easy path:
 - **No destructive actions.** No brute forcing, no exploitation, no payload delivery. The worst a scan does is open TCP connections to the ports you name.
 - **Non-destructive output.** Every run writes into a timestamped `runs/<YYYYMMDD_HHMMSS>/` directory, so results never overwrite a previous run. `runs/` is git-ignored.
 
-## Sample output
+## What a report contains
 
-`report.json` and `report.txt` are a **real recorded run** against `www.bilecik.bel.tr`, committed as a sample. **It has been redacted**: the `Set-Cookie` value has been replaced with `[REDACTED]` so no live third-party session identifier is published.
+Each run produces one JSON document and a matching plain-text report. No sample output is committed to this repository — generate your own by scanning a system you are authorised to test. The documents describe the *shape* of a target rather than any particular host:
 
-```json
-"summary_stats": {
-  "subdomains": 0, "third_party": 17, "endpoints": 224,
-  "wayback_urls": 200, "open_ports": 2, "gau_urls": 0
-}
-```
+- **Run metadata** — the target URL, the timestamp, and any per-probe failures appended to `notes`.
+- **DNS records** — `A`, `AAAA`, `MX`, `TXT`, `NS` and `SOA` answers, plus the WHOIS blob.
+- **HTTP headers** — the full response header set, and a present/missing breakdown of the six security headers.
+- **TLS details** — subject, issuer, validity window, serial number, negotiated cipher and days until expiry.
+- **Technologies detected** — whatever `Server`, `X-Powered-By` and `Via` advertise, with any matching CVE hints.
+- **Discovery** — endpoints found, subdomains from certificate transparency, Wayback URLs, and third-party domains counted separately.
+- **Open ports** — only when the active scan is enabled, with service banners.
+- **Discovered e-mails** — addresses surfaced by `theHarvester`, when it is installed.
+- **Risk summary** — findings classified `low` / `medium` / `high` / `info`, with severity counts.
 
-What the run shows:
-
-- **224 endpoints** and **17 third-party domains** discovered from the homepage, its scripts, `robots.txt` and the Wayback CDX index (capped at the default 200).
-- **Ports 80 and 443 open**, service `Apache httpd` — collected with `nmap -sV`.
-- `X-Powered-By: PHP/8.4.21`, so the fingerprint maps to the `apache` keyword and surfaces CVE-2021-41773 as a hint.
-- **All six security headers missing** — `content-security-policy`, `strict-transport-security`, `x-frame-options`, `x-content-type-options`, `referrer-policy`, `permissions-policy` — the one `low` finding.
-- TLS issued by DigiCert (`GeoTrust TLS RSA CA G1`), `TLS_AES_256_GCM_SHA384` / TLSv1.3, 174 days to expiry at scan time.
-- **Three errors recorded** — `robots.txt` 404, `sitemap.xml` 404, certificate-transparency read timeout.
-
-Those three failures are the point worth noticing: **errors are recorded per probe and appended to `notes`; a failing probe never aborts the run.** One probe timing out still leaves you with a complete report for everything else.
+The point worth noticing is the shape, not any single figure: **errors are recorded per probe and appended to `notes`; a failing probe never aborts the run.** One probe timing out still leaves you with a complete report for everything else.
 
 ## Limitations
 
@@ -231,7 +223,7 @@ Worth reading before you trust a result.
 - **Probes run sequentially.** This is the main one. Wall-clock time is the *sum* of every probe timeout — a CT-log timeout plus a wayback timeout plus six DNS lookups adds up. The probes are completely independent and almost entirely I/O-bound, so they are obvious candidates for a `ThreadPoolExecutor`; that is the next step, not a redesign.
 - **CVE detection is banner-keyword matching.** `nginx`, `apache` and `iis` are substring-matched against `Server` / `X-Powered-By` / `Via`. It cannot read a version number, so it cannot tell you whether a patch is applied, and it will happily flag a fully patched server. Every match is emitted with `hint only; verify version impact`. Confirm against the actual version and the CVE advisory before acting.
 - **Endpoint discovery does not execute JavaScript.** It is regex over HTML and inline scripts. Paths assembled at runtime — string concatenation, dynamic route tables, anything behind a JS framework router — will be missed. Expect the endpoint list to be a lower bound.
-- **Certificate-transparency lookups are the most common failure point.** `crt.sh` is frequently slow and often times out; in the sample run it did exactly that.
+- **Certificate-transparency lookups are the most common failure point.** `crt.sh` is frequently slow and often times out; a timeout there is recorded in `notes` and does not abort the run.
 - **CVSS scoring is absent.** The severity labels are hand-assigned heuristics, not computed scores.
 - **A 404 is not a finding.** Missing `robots.txt` / `sitemap.xml` are recorded as errors in `notes`, not as risk findings.
 
