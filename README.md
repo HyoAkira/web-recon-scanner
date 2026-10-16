@@ -232,3 +232,5 @@ Worth reading before you trust a result.
 **Status:** maintained as a personal portfolio project. The scanner core and the Streamlit dashboard are implemented and usable as described above; the outstanding items are the ones listed under [Limitations](#limitations) (chiefly the sequential-probe execution).
 
 **License:** MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Umut Can Akçay.
+
+<!-- pull-ref cleanup marker -->
